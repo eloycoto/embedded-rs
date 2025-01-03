@@ -19,12 +19,17 @@
             buildInputs = with pkgs; [
               (rust-bin.stable.latest.default.override {
                 extensions = [ "rust-src" ];
-                targets = [ "thumbv7m-none-eabi" ];
+                targets = [ 
+                  "thumbv7m-none-eabi"
+                  "thumbv8m.main-none-eabihf"
+                  ];
               })
             ] ++  [
               openocd
               rust-analyzer
               picotool
+              minicom
+              probe-rs-tools
             ];
           };
         }
