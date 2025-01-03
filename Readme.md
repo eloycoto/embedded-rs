@@ -1,6 +1,6 @@
-# A Industriosa Rust examples
+# embedded Rust examples
 
-This is a repo with some rust embedded examples:
+This is a repo with some rust embedded examples that I use to teach Rust:
 
 ### STM32f4-Nucleo series:
 
